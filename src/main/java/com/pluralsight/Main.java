@@ -20,7 +20,7 @@ public class Main {
         quotes[8] = "\"Life is 10% what happens to us and 90% how we react to it.\" — Charles R. Swindoll / Lou Holtz";
         quotes[9] = "\"Whether you think you can or think you can't, you're right.\" — Henry Ford";
 
-        int menu = 0;
+        int menu;
 
         do {
             try {
