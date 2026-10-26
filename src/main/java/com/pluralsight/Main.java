@@ -24,11 +24,15 @@ public class Main {
 
         do {
             try {
-                System.out.print("Select a number between 1 and 10: ");
+                System.out.print("Select a number between 1 and 10, or enter (0) for a random quote: ");
                 int index = read.nextInt();
-                index--; // adjust number for index
+                if (index == 0) {
+                    index = (int) (Math.random() * 10) + 1;
+                } else {
+                    index--; // adjust number for index
+                }
                 System.out.println(quotes[index]);
-                System.out.print("Select (1) to choose another quote: ");
+                System.out.print("Select (1) to choose another quote, or any number to quit: ");
                 menu = read.nextInt();
             } catch (Exception e) {
                 System.out.println("Your choice was not a valid option!");
